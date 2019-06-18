@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
+***Somehow the @fontawesome package cannot be installed using npm -i, so please run the following command before compiling:
+npm install --save-dev @fortawesome/fontawesome-free
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
