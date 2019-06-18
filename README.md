@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ***Somehow the @fontawesome package cannot be installed using npm -i, so please run the following command before compiling:
 
 npm -i
+
 npm install --save-dev @fortawesome/fontawesome-free
 
 ## Development server
