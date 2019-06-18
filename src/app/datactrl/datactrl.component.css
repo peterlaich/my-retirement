@@ -1,0 +1,17 @@
+div {
+    white-space: nowrap;
+}
+
+.datactrl-spacer {
+    /* flex: 1 1 auto; */
+    width:100%;
+}
+
+.datactrl-remarks {
+    font-size: 8pt;
+}
+
+.datactrl-data {
+    color: lightskyblue;
+    font-weight: bold;
+}

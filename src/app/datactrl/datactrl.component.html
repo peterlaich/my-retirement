@@ -1,0 +1,39 @@
+<!-- <div *ngIf="ctrltype === 'display'" fxlayout="row">
+  <span class="datactrl-name">{{ctrlname}} </span>
+  <span class="datactrl-data">{{ctrldata}} </span>
+  <span class="datactrl-remarks">{{ctrlremarks}}</span>
+  <span class="datactrl-spacer"></span>
+</div>
+<div *ngIf="ctrltype === 'edit'" fxlayout="row">
+  <span class="datactrl-name">{{ctrlname}} </span>
+  <span class="datactrl-data">{{ctrldata}} </span>
+  <span class="datactrl-remarks">{{ctrlremarks}}</span>
+  <span class="datactrl-spacer"></span>
+  <span class="datactrl-icoedit"><fa-icon icon="pencil-alt"></fa-icon></span>
+</div>
+<div *ngIf="ctrltype === 'button'" fxlayout="row">
+  <span class="datactrl-name">{{ctrlname}} </span>
+  <span class="datactrl-data">{{ctrldata}} </span>
+  <span class="datactrl-remarks">{{ctrlremarks}}</span>
+  <span class="datactrl-spacer"></span>
+  <span class="datactrl-button"><button mat-stroked-button>{{ctrlbtntext}}</button></span>
+</div> -->
+<div *ngIf="ctrltype === 'display'" fxFlex="100%" fxFlexFill fxLayout="row">
+  <div class="datactrl-name">{{ctrlname}}&nbsp;</div>
+  <div class="datactrl-data">{{ctrldata}}&nbsp;</div>
+  <div class="datactrl-remarks">{{ctrlremarks}}</div> 
+</div>
+<div *ngIf="ctrltype === 'edit'" fxFlex="100%" fxFlexFill fxLayout="row">
+  <div class="datactrl-name">{{ctrlname}}&nbsp;</div>
+  <div class="datactrl-data">{{ctrldata}}&nbsp;</div>
+  <div class="datactrl-remarks">{{ctrlremarks}}</div> 
+  <div class="datactrl-spacer"></div>
+  <button mat-icon-button class="datactrl-icoedit" (click)="openDialog()"><fa-icon icon="pencil-alt"></fa-icon></button>
+</div>
+<div *ngIf="ctrltype === 'button'" fxFlex="100%" fxFlexFill fxLayout="row">
+  <div class="datactrl-name">{{ctrlname}}&nbsp;</div>
+  <div class="datactrl-data">{{ctrldata}}&nbsp;</div>
+  <div class="datactrl-remarks">{{ctrlremarks}}</div> 
+  <div class="datactrl-spacer"></div>
+  <div class="datactrl-button"><button mat-stroked-button>{{ctrlbtntext}}</button></div>
+</div>

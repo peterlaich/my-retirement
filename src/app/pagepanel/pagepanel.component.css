@@ -1,0 +1,26 @@
+.page-panel-area {
+    border: 0 solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding:10px; 
+    background-color:white;
+}
+
+.page-panel > * {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-panel-title {
+    /* background-color: white; */
+    height:30px; 
+    padding: 10px 25px 0px 25px;
+}
+
+app-datactrl {
+    min-height:100%;
+    min-width:100%;
+    padding: 0 25px;
+}

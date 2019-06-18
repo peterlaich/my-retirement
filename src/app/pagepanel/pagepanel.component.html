@@ -1,0 +1,64 @@
+<div class="page-panel-area">
+  <mat-list class="page-panel-title">{{title}}</mat-list>
+  <mat-divider></mat-divider>
+  <mat-grid-list class="page-panel" cols="2" rowHeight="50px">
+    <!-- creation date -->
+    <mat-grid-tile>
+        <app-datactrl 
+          [ctrltype]="'display'" 
+          [ctrlname]="'Creation date:'"
+          [ctrldata]="sample_profile['Creation date'] | date:'yyyy-MM-dd'" fxLayoutAlign="start center"></app-datactrl>
+    </mat-grid-tile>
+    <!-- investment amt -->
+    <mat-grid-tile>
+        <app-datactrl 
+          [ctrltype]="'button'" 
+          [ctrlname]="'Investment amount: TWD '"
+          [ctrldata]="sample_profile['Investment amount'] | number:'1.0-0'"
+          [ctrlremarks]="'(per month)'"
+          [ctrlbtntext]="'Adjust amount'" fxLayoutAlign="start center"></app-datactrl>
+    </mat-grid-tile>
+    <!-- acc no -->
+    <mat-grid-tile>
+        <app-datactrl 
+          [ctrltype]="'edit'" 
+          [ctrlname]="'Account number:'"
+          [ctrldata]="sample_profile['Account number']"
+          [ctrlremarks]="" fxLayoutAlign="start center"></app-datactrl>
+    </mat-grid-tile>
+    <!-- accu inv amt -->
+    <mat-grid-tile>
+        <app-datactrl 
+          [ctrltype]="'display'" 
+          [ctrlname]="'Accumulated investment amount: TWD'"
+          [ctrldata]="sample_profile['Accumulated investment amount'] | number:'1.0-0'"
+          [ctrlremarks]="" fxLayoutAlign="start center"></app-datactrl>
+    </mat-grid-tile>
+    <!-- charge date -->
+    <mat-grid-tile>
+        <app-datactrl 
+          [ctrltype]="'edit'" 
+          [ctrlname]="'Charge date:'"
+          [ctrldata]="(sample_profile['Charge date'] | number:'1.0-0') + ' of the month'"
+          [ctrlremarks]="" fxLayoutAlign="start center"></app-datactrl>
+    </mat-grid-tile>
+    <!-- current market value -->
+    <mat-grid-tile>
+        <app-datactrl 
+          [ctrltype]="'button'" 
+          [ctrlname]="'Current market value: TWD'"
+          [ctrldata]="sample_profile['Current market value'] | number:'1.0-0'"
+          [ctrlremarks]=""
+          [ctrlbtntext]="'Redemption'" fxLayoutAlign="start center">
+        </app-datactrl></mat-grid-tile>
+    <!-- status -->
+    <mat-grid-tile>
+        <app-datactrl 
+          [ctrltype]="'button'" 
+          [ctrlname]="'Status'"
+          [ctrldata]="sample_profile['Status']"
+          [ctrlremarks]=""
+          [ctrlbtntext]="'Suspension of investment'" fxLayoutAlign="start center">
+        </app-datactrl></mat-grid-tile>
+  </mat-grid-list>
+</div>

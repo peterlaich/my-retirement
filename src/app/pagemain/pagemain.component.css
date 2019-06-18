@@ -1,0 +1,15 @@
+.main {
+    background-color: floralwhite;
+}
+.main > * {
+    padding: 15px 25px;
+}
+
+.main-footer {
+    text-align: center;
+}
+
+.main-footer button {
+    background-color: green;
+    color:white;
+}
